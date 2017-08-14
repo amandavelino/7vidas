@@ -1,0 +1,67 @@
+body 
+{
+    background-color: $bgColorPrimary;
+    color: $primaryColor;
+    font-family: $primaryFont;
+    font-size: $fontSizeBase * 1.8;
+    font-weight: $fontWeightNormal;
+}
+
+img 
+{
+    display: inline-block;
+    margin-bottom: 0;
+}
+
+.ss-wrapper 
+{
+    border-radius: $radiusPadrao;
+    box-shadow: $dropShadow;
+    width: 1375px; 
+    max-width: 100%;  
+    margin: 30px auto 0;  
+    overflow: hidden;  
+}
+
+.ss-container 
+{
+    padding-left: 55px;
+    padding-right: 55px;
+}
+
+.btn 
+{
+    border-radius: $radiusPadrao;
+    color: #fff;
+    display: inline-block;
+    font-size: $fontSizeBase * 2.5;
+    font-weight: $fontWeightMedium;
+    line-height: 1em;
+    padding: 7px 80px 5px;
+    text-transform: uppercase;
+
+    &.btn-doacao 
+    {
+        background: $bgColorBtn;
+    }
+
+}
+
+.sessao 
+{
+    position: relative;
+    overflow: hidden;
+
+    &::before 
+    {
+        content: "";
+        background-color: $primaryColor;
+        width: 930px;
+        height: 2px;
+        position: absolute;
+        left: 50%;
+        margin-left: -465px;
+        top: -1px;       
+    }
+
+}

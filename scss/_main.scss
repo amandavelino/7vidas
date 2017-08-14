@@ -1,0 +1,56 @@
+.ss-doacao
+{
+    background: url("../imgs/bg-main.jpg") no-repeat top center;
+    text-align: right;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    header 
+    {
+        padding-bottom: 60px;
+        text-align: right;
+        overflow: hidden;
+        position: relative;
+
+        &::after 
+        {
+            content: "";
+            background-color: $primaryColor;
+            width: 50px;
+            height: 2px;
+            position: absolute;
+            right: 5px;
+            bottom: 50px;
+        }
+
+        h2 
+        {
+            font-size: $fontSizeBase * 3;
+            line-height: 1.3em;
+            font-weight: $fontWeightNormal;
+            float: right;
+            letter-spacing: 5px;
+            margin: 0;
+            padding: 0; 
+            text-transform: uppercase;
+            max-width: 260px;
+        }
+
+    }
+
+    .ss-conteudo
+    {
+        text-align: right;
+        margin-bottom: 20px;
+        overflow: hidden;
+
+        p 
+        {
+            float: right;
+            line-height: 2em;
+            max-width: 420px;
+        }
+
+    }
+
+}
