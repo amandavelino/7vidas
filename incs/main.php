@@ -14,4 +14,34 @@
 
     </div>
     <!-- end .container -->
+
+    <div class="sessao ss-container ss-instagram">
+        
+        <ul>
+            <li>
+                <img src="./imgs/inst01.jpg" border="0">
+            </li>
+            <li>
+                <img src="./imgs/inst02.jpg" border="0">
+            </li>
+            <li>
+                <img src="./imgs/inst03.jpg" border="0">
+            </li>                        
+        </ul>
+
+        <footer class="ft-instagram">
+
+            <div class="up-ft">
+                <h4>Visite o nosso perfil no <a href="#" target="_blank"><img src="./imgs/instagram-logo.png" border="0"></a></h4>
+            </div>
+            <!-- end .up-ft -->
+            <div class="bt-ft">
+                <a href="#"><img src="./imgs/setevidas-ft.png" alt="Instituto Sete Vidas" border="0"></a>
+            </div>
+            <!-- end .bt-ft -->
+
+        </footer>
+
+    </div>
+    <!-- end .container -->    
 </main>

@@ -9,6 +9,12 @@
     padding-top: 130px;
     padding-bottom: 130px;
 
+    @include breakpoint($allCelular)
+    {   
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }   
+
     #hd-logo 
     {
         margin: 0 0 55px;
@@ -17,6 +23,13 @@
         a 
         {
             display: inline-block;
+            text-align: center;
+        }
+
+        img 
+        {
+            max-width: 100%;
+            margin: 0 auto;
         }
 
     }
@@ -29,6 +42,12 @@
         margin: 0;
         padding: 0;
         max-width: 480px;
+
+        @include breakpoint($allCelular)
+        {   
+            font-size: $fontSizeBase * 2;
+        }
+
     }
 
 }

@@ -12,6 +12,11 @@
         overflow: hidden;
         position: relative;
 
+        @include breakpoint($allCelular)
+        {   
+            text-align: center;
+        }           
+
         &::after 
         {
             content: "";
@@ -21,6 +26,13 @@
             position: absolute;
             right: 5px;
             bottom: 50px;
+
+            @include breakpoint($allCelular)
+            {   
+                right: 50%;
+                margin-right: -25px;
+            } 
+
         }
 
         h2 
@@ -34,6 +46,15 @@
             padding: 0; 
             text-transform: uppercase;
             max-width: 260px;
+
+            @include breakpoint($allCelular)
+            {   
+                font-size: $fontSizeBase * 2;
+                float: none;
+                max-width: 100%;
+                width: 100%;
+            } 
+
         }
 
     }
@@ -44,11 +65,87 @@
         margin-bottom: 20px;
         overflow: hidden;
 
+        @include breakpoint($allCelular)
+        {   
+            text-align: center;
+        } 
+
         p 
         {
             float: right;
             line-height: 2em;
             max-width: 420px;
+
+            @include breakpoint($allCelular)
+            {   
+                font-size: $fontSizeBase * 1.6;
+                float: none;
+                line-height: 1.6em;
+                max-width: 100%;
+            }
+
+        }
+
+    }
+
+}
+
+.ss-instagram
+{
+    overflow: hidden;
+    padding: 0;
+
+    ul 
+    {
+        list-style: inside none;
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+
+        li 
+        {
+            float: left;
+            padding: 0;
+            margin: 0;
+            width: 33.33337%;
+        }
+
+        img 
+        {
+            width: 100%;
+        }
+
+    }
+
+    .ft-instagram
+    {
+        .up-ft
+        {
+            padding: 20px 0;
+            text-align: center;
+
+            /* bg gradiente */
+            background: rgba(240,163,39,1);
+            background: linear-gradient(45deg, rgba(240,163,39,1) 0%, rgba(238,101,60,1) 50%, rgba(229,42,95,1) 100%);
+
+            h4 
+            {
+                padding: 0;
+                margin: 0;
+            }
+
+        }
+
+        .bt-ft 
+        {
+            padding: 20px 0;
+            text-align: center;
+
+            img 
+            {
+                margin: 0 auto;
+            }
+
         }
 
     }

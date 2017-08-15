@@ -27,6 +27,11 @@ img
 {
     padding-left: 55px;
     padding-right: 55px;
+
+    @include breakpoint($allCelular)
+    {   
+        text-align: center;
+    }    
 }
 
 .btn 
@@ -43,6 +48,21 @@ img
     &.btn-doacao 
     {
         background: $bgColorBtn;
+        box-shadow: $dropShadowLight;
+        transition: $transitionBg;
+
+        &:hover,
+        &:focus  
+        {
+            background: $bgColorBtnHover;
+            color: #fff;    
+        }
+
+        @include breakpoint($smallCelular)
+        {   
+            display: block;
+        } 
+
     }
 
 }
@@ -50,6 +70,7 @@ img
 .sessao 
 {
     position: relative;
+    width: 100%;
     overflow: hidden;
 
     &::before 
@@ -61,7 +82,7 @@ img
         position: absolute;
         left: 50%;
         margin-left: -465px;
-        top: -1px;       
+        top: 0;       
     }
 
 }

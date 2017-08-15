@@ -19,9 +19,12 @@ $primaryColor: #fff;
 //Botoes
 $radiusPadrao : 50px; 
 $bgColorBtn: #3eb194;
+$bgColorBtnHover: #37a085;
 
 //Efeitos
 $dropShadow: 0px 0px 40px 0px rgba(0,0,0,0.5);
+$dropShadowLight: 2px 2px 5px 0px rgba(0,0,0,0.2);
+$transitionBg: background-color .5s ease-in-out;
 
 //Media Queries
 

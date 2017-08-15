@@ -16,6 +16,7 @@
 
     </div>
     <!-- end .ss-wrapper -->
+    <?php include("./incs/footer.php"); ?>
 
 </body>
 </html>
